@@ -8,5 +8,10 @@ import {products} from '../products';
 })
 export class ProductListComponent{
   products=products;
-  share;
+  share(){
+    window.alert('the product has been shared!');
+  };
+  onNotify(){
+    window.alert('you will be notified when the productr goes to th sale');
+  }
 }
